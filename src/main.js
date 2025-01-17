@@ -6,6 +6,12 @@ import router from './rootRouter'
 import store from '@/core/store'
 import  { ToastPlugin, LoadingPlugin } from 'vux'
 import './share/assets/style/mx_ui.css';
+import VConsole from 'vconsole'; // 引入 vConsole
+
+// 初始化 vConsole
+const vConsole = new VConsole();
+Vue.use(vConsole);
+
 Vue.use(ToastPlugin)
 Vue.use(LoadingPlugin)
 
